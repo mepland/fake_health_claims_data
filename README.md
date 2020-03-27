@@ -31,5 +31,13 @@ jupyter lab fake_service_lines.ipynb
 
 # Reading Outputs into Pandas from URL
 ```python
-# TODO
+import pandas as pd
+import io
+import requests
+
+url = 'https://github.com/mepland/fake_health_claims_data/raw/master/output/randomly_generated_service_lines.csv'
+s = requests.get(url).content
+dfp = pd.read_csv(io.StringIO(s.decode('utf-8')))
+
+dfp.head(10)
 ```
