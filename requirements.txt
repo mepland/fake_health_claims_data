@@ -1,0 +1,15 @@
+jupyterlab
+
+pandas
+numpy
+scipy
+
+# matplotlib
+seaborn
+# palettable
+
+tqdm
+natsort
+humanize
+
+faker
